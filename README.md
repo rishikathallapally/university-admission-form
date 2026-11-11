@@ -3,7 +3,7 @@
 
 A responsive University Admission Form built using HTML and CSS. This project provides a clean and user-friendly interface for students to enter their personal, contact, academic and course details.
 
-## 🌐 Live Demo https://rishikathallapally.github.io/university-admission-form/
+## 🌐 Live Demo [Click Here](https://rishikathallapally.github.io/university-admission-form/)
 
 ## ✨ Features
 
@@ -63,4 +63,3 @@ This is a frontend-only project built using HTML and CSS. Form submission and do
 
 **Rishika Thallapally**
 
-- GitHub: [rishikathallapally](https://github.com/rishikathallapally)
