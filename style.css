@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #263238;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: #3989dc;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+.header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.university-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    background-color: #263b80;
+}
+
+.university-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgba(15, 35, 75, 0.85),
+        rgba(15, 35, 75, 0.15)
+    );
+}
+
+.banner-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.banner-content p:first-child {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.banner-content h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    max-width: 500px;
+}
+
+.banner-content span {
+    font-size: 15px;
+    max-width: 450px;
+    line-height: 1.7;
+}
+
+.form-section {
+    background-color: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.form-heading h2 {
+    color: #3989dc;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.form-heading p {
+    color: #778397;
+    font-size: 14px;
+}
+
+.form-heading small {
+    display: block;
+    color: #d05b5b;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.form-group {
+    margin-bottom: 32px;
+}
+
+.form-group h3 {
+    color: #356fa9;
+    font-size: 17px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e8f0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.field label {
+    color: #394b60;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #263238;
+    background-color: white;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: #929eac;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #3989dc;
+    box-shadow: 0 0 0 3px rgba(57, 137, 220, 0.12);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.field input[type="file"] {
+    padding: 9px;
+    font-size: 13px;
+}
+
+.field input[type="file"]::file-selector-button {
+    border: none;
+    background-color: #eaf3ff;
+    color: #2869a9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.field small {
+    color: #8491a1;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.declaration {
+    background-color: #f8faff;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.declaration h3 {
+    border: none;
+    margin-bottom: 12px;
+}
+
+.check-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #526174;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.check-label input {
+    margin-top: 4px;
+    accent-color: #3989dc;
+    flex-shrink: 0;
+}
+
+.button-area {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.reset-btn,
+.submit-btn {
+    border-radius: 7px;
+    padding: 13px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reset-btn {
+    background-color: white;
+    color: #536477;
+    border: 1px solid #cbd5e1;
+}
+
+.reset-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.submit-btn {
+    background-color: #3989dc;
+    color: white;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #246bb7;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 15px;
+    color: #778397;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        padding: 25px 18px;
+    }
+    .university-banner {
+        height: 250px;
+    }
+    .form-section {
+        padding: 28px 22px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 20px;
+    }
+    .header p {
+        font-size: 12px;
+    }
+    .container {
+        padding: 18px 12px;
+    }
+    .university-banner {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+    .banner-content {
+        padding: 20px;
+    }
+    .banner-content p:first-child {
+        font-size: 10px;
+    }
+    .banner-content h2 {
+        font-size: 23px;
+    }
+    .banner-content span {
+        font-size: 12px;
+    }
+    .form-section {
+        padding: 23px 15px;
+    }
+    .form-heading h2 {
+        font-size: 21px;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .full-width {
+        grid-column: auto;
+    }
+    .form-group h3 {
+        font-size: 16px;
+    }
+    .button-area {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .reset-btn,
+    .submit-btn {
+        width: auto;
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+}

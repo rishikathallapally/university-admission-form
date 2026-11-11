@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>University Admission Portal</h1>
+        <p>Take the first step towards your future</p>
+    </header>
+
+    <main class="container">
+        <section class="university-banner">
+            <img src="university.jpg" alt="University campus">
+            <div class="banner-content">
+                <p>WELCOME TO OUR UNIVERSITY</p>
+                <h2>Build Your Future With Us</h2>
+                <span>
+                    Discover opportunities, explore your interests
+                    and begin your journey towards success.
+                </span>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-heading">
+                <h2>Student Admission Form</h2>
+                <p>
+                    Please provide your details accurately
+                    to complete your admission application.
+                </p>
+                <small>* Fields marked with an asterisk are mandatory.</small>
+            </div>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <section class="form-group">
+                    <h3>01. Personal Information</h3>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName"
+                                name="firstName"
+                                placeholder="Enter first name"
+                                autocomplete="given-name"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName"
+                                name="lastName"
+                                placeholder="Enter last name"
+                                autocomplete="family-name"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob"
+                                name="dob"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="nationality">Nationality *</label>
+                            <select id="nationality" name="nationality" required>
+                                <option value="">Select nationality</option>
+                                <option value="indian">Indian</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="category">Category</label>
+                            <select id="category" name="category">
+                                <option value="">Select category</option>
+                                <option>General</option>
+                                <option>OBC</option>
+                                <option>SC</option>
+                                <option>ST</option>
+                                <option>EWS</option>
+                                <option>Other</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>02. Contact Information</h3>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email"
+                                name="email"
+                                placeholder="example@gmail.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Mobile Number *</label>
+                            <input type="tel" id="phone"
+                                name="phone"
+                                placeholder="10-digit mobile number"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
+                                inputmode="numeric"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="alternatePhone">
+                                Alternate Mobile Number
+                            </label>
+                            <input type="tel" id="alternatePhone"
+                                name="alternatePhone"
+                                placeholder="Alternate number"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
+                                inputmode="numeric">
+                        </div>
+                        <div class="field">
+                            <label for="pincode">PIN Code *</label>
+                            <input type="text" id="pincode"
+                                name="pincode"
+                                placeholder="6-digit PIN code"
+                                pattern="[0-9]{6}"
+                                maxlength="6"
+                                inputmode="numeric"
+                                required>
+                        </div>
+                        <div class="field full-width">
+                            <label for="address">Full Address *</label>
+                            <textarea id="address"
+                                name="address"
+                                placeholder="Enter your complete address"
+                                rows="3"
+                                autocomplete="street-address"
+                                required></textarea>
+                        </div>
+                        <div class="field">
+                            <label for="city">City *</label>
+                            <input type="text" id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="state">State *</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select state</option>
+                                <option>Telangana</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Karnataka</option>
+                                <option>Maharashtra</option>
+                                <option>Tamil Nadu</option>
+                                <option>Kerala</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>03. Parent / Guardian Information</h3>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="parentName">
+                                Parent / Guardian Name *
+                            </label>
+                            <input type="text" id="parentName"
+                                name="parentName"
+                                placeholder="Enter full name"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="relationship">Relationship *</label>
+                            <select id="relationship"
+                                name="relationship" required>
+                                <option value="">Select relationship</option>
+                                <option>Father</option>
+                                <option>Mother</option>
+                                <option>Guardian</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="parentPhone">
+                                Parent Mobile Number *
+                            </label>
+                            <input type="tel" id="parentPhone"
+                                name="parentPhone"
+                                placeholder="10-digit mobile number"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
+                                inputmode="numeric"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="parentEmail">
+                                Parent Email Address
+                            </label>
+                            <input type="email" id="parentEmail"
+                                name="parentEmail"
+                                placeholder="Enter parent email">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>04. Academic Information</h3>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="qualification">
+                                Highest Qualification *
+                            </label>
+                            <select id="qualification"
+                                name="qualification" required>
+                                <option value="">Select qualification</option>
+                                <option>10th Standard</option>
+                                <option>Intermediate / 12th</option>
+                                <option>Diploma</option>
+                                <option>Undergraduate Degree</option>
+                                <option>Postgraduate Degree</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="college">
+                                Previous College / School *
+                            </label>
+                            <input type="text" id="college"
+                                name="college"
+                                placeholder="Enter institution name"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="board">Board / University</label>
+                            <input type="text" id="board"
+                                name="board"
+                                placeholder="Enter board or university">
+                        </div>
+                        <div class="field">
+                            <label for="passingYear">Year of Passing *</label>
+                            <input type="number" id="passingYear"
+                                name="passingYear"
+                                placeholder="e.g. 2026"
+                                min="1980"
+                                max="2026"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="percentage">Percentage *</label>
+                            <input type="number" id="percentage"
+                                name="percentage"
+                                placeholder="Enter percentage"
+                                min="0"
+                                max="100"
+                                step="0.01"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="medium">Medium of Instruction</label>
+                            <select id="medium" name="medium">
+                                <option value="">Select medium</option>
+                                <option>English</option>
+                                <option>Telugu</option>
+                                <option>Hindi</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>05. Course Selection</h3>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="course">Course Applied For *</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select course</option>
+                                <option>B.Sc Computer Science</option>
+                                <option>Bachelor of Computer Applications</option>
+                                <option>Bachelor of Commerce</option>
+                                <option>Bachelor of Business Administration</option>
+                                <option>Bachelor of Arts</option>
+                                <option>Bachelor of Technology</option>
+                                <option>Master of Computer Applications</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="specialization">Specialization</label>
+                            <select id="specialization" name="specialization">
+                                <option value="">Select specialization</option>
+                                <option>Computer Science</option>
+                                <option>Information Technology</option>
+                                <option>Data Science</option>
+                                <option>Artificial Intelligence</option>
+                                <option>Commerce</option>
+                                <option>Management</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="studyMode">Study Mode *</label>
+                            <select id="studyMode" name="studyMode" required>
+                                <option value="">Select study mode</option>
+                                <option>Full Time</option>
+                                <option>Part Time</option>
+                                <option>Distance Learning</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="admissionYear">Admission Year *</label>
+                            <select id="admissionYear"
+                                name="admissionYear" required>
+                                <option value="">Select year</option>
+                                <option>2026-2027</option>
+                                <option>2027-2028</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>06. Document Upload</h3>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="photo">Student Photograph *</label>
+                            <input type="file" id="photo"
+                                name="photo"
+                                accept="image/png, image/jpeg"
+                                required>
+                            <small>Accepted formats: JPG, PNG</small>
+                        </div>
+                        <div class="field">
+                            <label for="marksheet">Previous Marks Memo *</label>
+                            <input type="file" id="marksheet"
+                                name="marksheet"
+                                accept=".pdf,.jpg,.jpeg,.png"
+                                required>
+                            <small>Accepted formats: PDF, JPG, PNG</small>
+                        </div>
+                        <div class="field">
+                            <label for="certificate">
+                                Transfer Certificate
+                            </label>
+                            <input type="file" id="certificate"
+                                name="certificate"
+                                accept=".pdf,.jpg,.jpeg,.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-group declaration">
+                    <h3>07. Declaration</h3>
+                    <label class="check-label">
+                        <input type="checkbox"
+                            name="accuracy"
+                            required>
+                        <span>
+                            I confirm that the information provided
+                            above is accurate.
+                        </span>
+                    </label>
+                    <label class="check-label">
+                        <input type="checkbox"
+                            name="consent"
+                            required>
+                        <span>
+                            I agree to the university admission
+                            terms and conditions.
+                        </span>
+                    </label>
+                </section>
+
+                <div class="button-area">
+                    <button type="reset" class="reset-btn">
+                        Clear Form
+                    </button>
+                    <button type="submit" class="submit-btn">
+                        Submit Application &rarr;
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy; 2026 University Admission Portal.
+            All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
